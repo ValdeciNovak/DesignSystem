@@ -10,7 +10,7 @@ export const TextInput = forwardRef<ElementRef<typeof Input> ,TextInputProps>(
     return (
       <TextInputContainer>
         {!!prefix && <Prefix>{prefix}</Prefix>}
-        <Input ref={ref} {...props} />
+        <Input {...props} />
       </TextInputContainer>
     )
   }
